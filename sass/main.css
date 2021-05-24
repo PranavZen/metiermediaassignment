@@ -86,6 +86,59 @@ ul li {
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+#form-section {
+  background-color: #004E8E;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+#form-section .form-group input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#form-section .form-group .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.1rem solid #fff;
+  padding: 0;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#form-section .form-group .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#form-section .form-group .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+#form-section .form-group .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+#form-section .form-group .form-control::placeholder {
+  color: #fff;
+}
+
+#form-section .check-btn {
+  padding: 0 2rem;
+  color: #004E8E;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 #advantre h4 {
   margin-top: 5rem;
   margin-bottom: 3rem;
@@ -435,5 +488,13 @@ ul li {
   padding-right: 1.8rem;
   display: inline-block;
   font-size: 2rem;
+}
+
+#foo-bg .arrow li::after {
+  content: "    \f178";
+  color: #ce8807;
+  font-family: FontAwesome;
+  font-weight: 800;
+  margin-left: 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */

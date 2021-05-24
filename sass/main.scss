@@ -67,6 +67,44 @@ ul li {
     }
   }
 }
+// Form start
+#form-section {
+  background-color: $bg-blue-color;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+
+  .form-group {
+    input:focus {
+      outline: none !important;
+      outline-width: 0 !important;
+      box-shadow: none;
+    }
+    .form-control {
+      border: none;
+      border-radius: 0;
+      border-bottom: 0.1rem solid $font-white-color;
+      padding: 0;
+      background: transparent;
+      outline: none;
+      color: $font-white-color;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      &::placeholder {
+        color: $font-white-color;
+      }
+    }
+  }
+  .check-btn {
+    padding: 0 2rem;
+    color: $bg-blue-color;
+    background-color: $font-white-color;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 0.6rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+}
 // Advanture onboard
 #advantre {
   h4 {
@@ -314,7 +352,6 @@ ul li {
     bottom: 0;
     padding: 0;
     margin: 0;
-    
   }
   h6 {
     font-weight: 700;
@@ -334,5 +371,14 @@ ul li {
     padding-right: 1.8rem;
     display: inline-block;
     font-size: 2rem;
+  }
+  .arrow {
+    li::after {
+      content: "    \f178";
+      color: #ce8807;
+      font-family: FontAwesome;
+      font-weight: 800;
+      margin-left: 0.4rem;
+    }
   }
 }
