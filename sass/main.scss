@@ -34,7 +34,7 @@ ul li {
 #header-bg {
   background-image: url(../Images/Body/header-img.png);
   @include img-prop;
-  height: 100vh;
+ 
   p {
     color: $font-white-color;
     margin-left: 2.2rem;

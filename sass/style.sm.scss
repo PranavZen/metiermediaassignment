@@ -1,5 +1,9 @@
 @media only screen and (max-width: 576px) {
+  #header-bg{
+    height: 100% !important;
+  }
   // Advanture onboard
+  
   #advantre {
     .location-grid {
       display: grid;
@@ -13,3 +17,4 @@
     }
   }
 }
+ 

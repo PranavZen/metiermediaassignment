@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,MAAM;EACvC,AAAA,UAAU,CAAC;IACT,MAAM,EAAE,gBAAgB;GACzB",
+    "sources": [
+        "style.xl.scss"
+    ],
+    "names": [],
+    "file": "style.xl.css"
+}
