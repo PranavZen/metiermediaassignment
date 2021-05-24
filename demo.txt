@@ -1,0 +1,122 @@
+<section id="offers">
+      <div class="container">
+        <div>
+          <h5 class="text-uppercase offer-title">
+            take advantage of our latest offer
+          </h5>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-5">
+              <img src="./Images/Body/cruise-1.png" />
+              <div class="offer-data w-75">
+                <h5 class="text-uppercase">
+                  Free canceleation and fully refundabel
+                </h5>
+                <h6>
+                  Book any of our sailings in May, June and July with just `500*
+                </h6>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 mb-5 btnbook">
+              <button class="btn book-btn">Book now !</button>
+            </div>
+            <!-- <p class="text-center">
+              * pay the rest 10 days before selling date
+            </p> -->
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-5">
+              <img src="./Images/Body/child.png" />
+              <div class="offer-data w-75">
+                <h5 class="text-uppercase">
+                  Free canceleation and fully refundabel
+                </h5>
+                <h6>
+                  Book any of our sailings in May, June and July with just `500*
+                </h6>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 mb-5 btnbook">
+              <button class="btn book-btn">Book now !</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-5">
+              <img src="./Images/Body/lady.png" />
+              <div class="offer-data w-75">
+                <h5 class="text-uppercase">
+                  Free canceleation and fully refundabel
+                </h5>
+                <h6>
+                  Book any of our sailings in May, June and July with just `500*
+                </h6>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3 mb-5 btnbook">
+              <button class="btn book-btn">Book now !</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    #offers {
+  margin-top: 5rem;
+  padding: 0 2.2rem;
+  .container {
+    padding: 0;
+  }
+  .card{
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+  }
+  .btnbook{
+    position: absolute;
+    top: 65%;
+     left: 25%;
+    //  transform: translate(20%, -50%);
+  }
+.book-btn{
+  // position: absolute;
+  // margin-top: 9rem;
+  // bottom: -100%;
+  margin-top: 1rem;
+ 
+  @include btns;
+}
+  .offer-title{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    color: $bg-blue-color;
+    font-weight: 700;
+    font-size: 2.6rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .offer-data {
+    position: absolute;
+    color: $font-white-color;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    h5 {
+       margin-top: 1rem;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+   h6{
+    font-weight: 500;
+    font-size: 1.6rem;
+   }
+  }
+}

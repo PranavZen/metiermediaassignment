@@ -1,0 +1,27 @@
+@mixin btns {
+    background-color: $btn-color;
+    color: $font-white-color;
+    
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.4rem 3rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+@mixin img-prop{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin title-prop{ 
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: $bg-blue-color;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}

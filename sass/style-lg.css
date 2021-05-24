@@ -1,0 +1,9 @@
+@media only screen and (max-width: 960px) {
+  #advantre .location-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "card1" "card2" "card1" "card3" "card4" "card4";
+    grid-gap: 1rem;
+  }
+}
+/*# sourceMappingURL=style-lg.css.map */

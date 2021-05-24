@@ -1,0 +1,338 @@
+@import "var";
+@import "mixin";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font: inherit;
+  font-size: 100%;
+  // vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+}
+section,
+footer,
+header,
+menu,
+nav {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+// Header start
+#header-bg {
+  background-image: url(../Images/Body/header-img.png);
+  @include img-prop;
+  height: 100vh;
+  p {
+    color: $font-white-color;
+    margin-left: 2.2rem;
+    font-weight: 500;
+  }
+  .header-details {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2rem 3rem;
+    margin-left: 2rem 2rem;
+
+    h2 {
+      color: $font-white-color;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    h4 {
+      color: $font-white-color;
+      font-weight: 700;
+      font-size: 2.6rem;
+      text-transform: uppercase;
+    }
+    h6 {
+      color: $font-white-color;
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    .book-btn {
+      @include btns;
+    }
+  }
+}
+// Advanture onboard
+#advantre {
+  h4 {
+    @include title-prop;
+  }
+  .location-grid {
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card1 card3"
+      "card4 card4";
+    grid-gap: 1rem;
+
+    .item {
+      &.item-1 {
+        grid-area: card1;
+      }
+      &.item-2 {
+        grid-area: card2;
+      }
+      &.item-3 {
+        grid-area: card3;
+      }
+      &.item-4 {
+        grid-area: card4;
+      }
+
+      .item-data {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .card-img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-body-img {
+    @include img-prop;
+    border-radius: 2rem;
+    &.img1 {
+      background-image: url(../Images/Body/city-1.png);
+    }
+    &.img2 {
+      background-image: url(../Images/Body/city-2.png);
+    }
+    &.img3 {
+      background-image: url(../Images/Body/city-3.png);
+    }
+    &.img4 {
+      background-image: url(../Images/Body/city-4.png);
+    }
+  }
+  .img-text {
+    padding: 10rem 5rem;
+    text-transform: uppercase;
+    h5 {
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: $font-white-color;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: justify;
+    .bold-text {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+  }
+}
+
+// offers cards
+#offers {
+  h4 {
+    @include title-prop;
+  }
+  .card {
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+
+    .book-btn {
+      margin: 1rem;
+
+      @include btns;
+    }
+    &.card-1 {
+      background-image: url(../Images/Body/cruise-1.png);
+
+      @include img-prop;
+    }
+    &.card-2 {
+      background-image: url(../Images/Body/child.png);
+      @include img-prop;
+    }
+    &.card-3 {
+      background-image: url(../Images/Body/lady.png);
+      @include img-prop;
+    }
+  }
+
+  .offer-data {
+    h5 {
+      margin-top: 1rem;
+      font-weight: 700;
+      font-size: 2rem;
+      color: $font-white-color;
+      text-align: center;
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: $font-white-color;
+      text-align: center;
+    }
+  }
+}
+
+// city sea start
+#city-sea {
+  background-image: url(../Images/Body/city-bg.png);
+  @include img-prop;
+  margin-top: 5rem;
+  padding: 0 2.2rem;
+  .container {
+    padding: 0;
+  }
+  .card {
+    border-radius: 2rem;
+    margin: 0 5rem;
+  }
+  img {
+    width: 100%;
+  }
+  h4 {
+    padding-top: 5rem;
+
+    @include title-prop;
+    margin-bottom: 0 !important;
+  }
+
+  h6 {
+    color: $bg-blue-color;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.8rem;
+
+    font-weight: 500;
+    padding-bottom: 5rem;
+    line-height: 1.4;
+  }
+}
+// healthy waves start
+#healty-wave {
+  padding: 0 2.2rem;
+  h4 {
+    @include title-prop;
+  }
+  .text-para p {
+    font-size: 1.8rem;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .content {
+    margin-left: 2rem;
+    .heading {
+      color: $bg-blue-color;
+      font-size: 1.8rem;
+    }
+    .sub-heading {
+      color: $bg-blue-color;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+  }
+}
+
+// price card start
+#price-cards {
+  margin-top: 5rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    margin-bottom: 2.5rem;
+    width: 100%;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
+    h4 {
+      line-height: 1;
+    }
+    .card-body p {
+      text-align: center;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .text-title {
+      color: $bg-blue-color;
+      font-weight: 700;
+    }
+  }
+
+  .card-btm-line {
+    border-bottom: 2px solid #707070;
+    padding-bottom: 0.6rem;
+    .rate h3 {
+      text-align: right;
+    }
+    .rate h4 {
+      text-align: right;
+    }
+  }
+  .btn-bg {
+    @include btns;
+  }
+}
+
+// Footer Strat
+
+#foo-bg {
+  background-color: $bg-blue-color;
+  color: #fff;
+  line-height: 2;
+  padding-left: 2.2rem;
+  bottom: 0;
+  .corve {
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    
+  }
+  h6 {
+    font-weight: 700;
+    line-height: 3;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  ul li {
+    font-size: 1.6rem;
+  }
+
+  .social-icon li {
+    padding-right: 1.8rem;
+    display: inline-block;
+    font-size: 2rem;
+  }
+}
